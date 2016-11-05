@@ -31,7 +31,9 @@ shinyUI(pageWithSidebar(
   mainPanel(
     plotOutput("distPlot"),
     h3("The  BMI is"),
-    verbatimTextOutput("BMI")
+    verbatimTextOutput("BMI"),
+    
+    a( "Click here to view the APP Shiny source code in GitHub",href="https://github.com/cjmarchante/Shiny-Application-and-Reproducible-Pitch")
 
     )
   ))

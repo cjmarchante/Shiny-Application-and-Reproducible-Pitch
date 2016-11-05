@@ -27,15 +27,8 @@ shinyServer(
       p<- p + theme(legend.background = element_rect())
       p<- p + theme(legend.background = element_rect(fill="gray90", size=.5, linetype="dotted"))
       p<- p + scale_fill_discrete(name="Percentiles")
-     # bp + scale_fill_manual(values=c("#999999", "#E69F00", "#56B4E9"), 
-      #                       name="Experimental\nCondition",
-       #                      breaks=c("ctrl", "trt1", "trt2"),
-        #                     labels=c("Control", "Treatment 1", "Treatment 2"))
-
- 
-
-       p<- p+ geom_point(aes(x=input$age, y=pp()),colour = 'red', size = 3)
-      p<-p+ labs(y = "BMI")+labs(x = "AGE")+labs(title = "BMI Percentile")
+      p<- p+ geom_point(aes(x=input$age, y=pp()),colour = 'red', size = 3)
+      p<- p+ labs(y = "BMI")+labs(x = "AGE")+labs(title = "BMI Percentile")
       
       
       print(p)
